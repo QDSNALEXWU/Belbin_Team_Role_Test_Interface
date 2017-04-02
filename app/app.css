@@ -45,6 +45,12 @@
   margin-left: 10%;
 }
 
+#next{
+  width: 65% ;
+  margin: 0 auto;
+  margin-bottom: 4vh; 
+}
+
 .Question select {
   width: 90% ;
   margin: 0 auto ;
