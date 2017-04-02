@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Freer</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body ng-app="myApp">
+  <div ng-controller="Controller1" class="Question">
+      <h3>Q5. I gain satisfaction in a job because:   </h3>
+      <form>
+          <div class="form-group">
+          <label for="Select1">A. I enjoy analyzing situations and checking up all the possible choices  </label>
+          <select ng-change="change_points()" class="form-control" id="Select1" ng-model="Q1.A" ng-options="i for i in arr_A"  ng-init="Q1.A=arr[0]" ></select> 
+          </div>
+      
+          <div class="form-group">
+          <label for="Select2">B. I feel that I am using my special qualifications and training to advantage   </label>
+          <select  ng-change="change_points()" class="form-control" id="Select2" ng-model="Q1.B" ng-options="i for i in arr_B"  ng-init="Q1.B=arr[0]">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+          <label for="Select3">C. I like to find a field that stretches my imagination   </label>
+          <select ng-change="change_points()"  class="form-control" id="Select3" ng-model="Q1.C" ng-options="i for i in arr_C"  ng-init="Q1.C=arr[0]">
+             <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+          <label for="Select4">D. I feel highly satisfied when I can give a job my full attention   </label>
+          <select ng-change="change_points()"  class="form-control" id="Select4" ng-model="Q1.D" ng-options="i for i in arr_D"  ng-init="Q1.D=arr[0]">
+               <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+          <label for="Select5">E. I am interested in finding practical solutions to problems   </label>
+          <select ng-change="change_points()"  class="form-control" id="Select5" ng-model="Q1.E" ng-options="i for i in arr_E"  ng-init="Q1.E=arr[0]">
+               <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+          <label for="Select6">F. I like to feel I am building and maintaining good working relationships    </label>
+          <select ng-change="change_points()"  class="form-control" id="Select6" ng-model="Q1.F" ng-options="i for i in arr_F"  ng-init="Q1.F=arr[0]">
+               <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+          <label for="Select7">G. I like to meet people who may have something new to offer    </label>
+          <select ng-change="change_points()"  class="form-control" id="Select7" ng-model="Q1.G" ng-options="i for i in arr_G"  ng-init="Q1.G=arr[0]">
+               <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+          <label for="Select8">H. I can get people to agree on a necessary course of action </label>
+          <select ng-change="change_points()"  class="form-control" id="Select8" ng-model="Q1.H" ng-options="i for i in arr_H"  ng-init="Q1.H=arr[0]">
+               <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            </select>
+          </div>
+
+
+          <div class="form-group">
+          <label for="Select9">I. I can have a strong influence on decision making   </label>
+          <select ng-change="change_points()"  class="form-control" id="Select9" ng-model="Q1.I" ng-options="i for i in arr_I"  ng-init="Q1.I=arr[0]">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            </select>
+          </div>
+
+           <a href="section6.html"><button id="next" type="button" class="btn btn-primary btn-lg btn-block" style="background-color:#4e2026">下一道题</button></a>
+      </form>
+
+  </div>
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
