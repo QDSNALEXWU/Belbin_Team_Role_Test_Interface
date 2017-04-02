@@ -7,7 +7,7 @@
 .intro {
   width: 80% ;
   margin: 0 auto;
-  margin-top: 40% ;
+  margin-top: 13vh ;
   text-align: center; 
 }
 
@@ -27,14 +27,16 @@
 
 .Question{
   width: 95% ;
+  max-width: 600px;
   margin: 0 auto;
-  margin-top: 20% ;
+  margin-top: 10vh ;
   text-align: center;
   color: #4e2026;
 }
 
 .Question h3 {
   margin-bottom: 5vh ;
+
 }
 
 .Question label {
@@ -52,8 +54,9 @@
 }
 
 .Question select {
-  width: 90% ;
+  width: 100% ;
   margin: 0 auto ;
+
 }
 
 
@@ -81,16 +84,23 @@
 
 .result1{
   width: 100vw;
+  max-width: 400px;
+  max-height: 500px ;
   height: 80vh ;
   position: absolute;
   top: 0;
-  left: 0 ;
+  left: 50% ;
+  top: 0 ;
+  transform: translateX(-50%);
 }
 
 .result2{
   width: 100vw;
   height: 80vh ;
+  max-width: 400px;
+  max-height: 500px ;
   position: absolute;
-  top: 70%;
-  left: 0 ;
+  top: 78vh;
+  left: 50% ;
+  transform: translateX(-50%);
 }
