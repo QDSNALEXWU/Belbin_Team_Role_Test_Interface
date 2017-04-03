@@ -20,10 +20,23 @@ myApp.controller('Controller1', ['$scope', function($scope ) {
     var url2 = sessionStorage.getItem('img2') ; 
     console.log(url1);
     console.log(url2);
+    $("#img1").css('display', "none");
+    $("#img2").css('display', "none");
 
-    if(url1 && url2) {
+
+
+    var explode = function(){
         $("#img1").attr('src', url1);
         $("#img2").attr('src', url2);
+        $("#img1").css('display', "block");
+        $("#img2").css('display', "block");
+        $("#loader").css('display', "none");
+    };
+
+
+    if(url1 && url2) {
+        setTimeout(explode, 3000);  
+
     }
 
 
@@ -44,7 +57,7 @@ myApp.controller('Controller1', ['$scope', function($scope ) {
         console.log(sessionStorage.getItem('result')) ;
 
         var node = $scope.Q1 ; 
-        var sum = node.A + node.B + node.C + node.D + node.E + node.F + node.G + node.H + node.I ; 
+        var sum = node.A + node.B + node.C + node.D + node.E + node.F + node.G + node.H ; 
         $scope.sum = sum ;
 
         if (sum == 10) {
@@ -94,18 +107,9 @@ myApp.controller('Controller1', ['$scope', function($scope ) {
             $scope.arr_H = $scope.arr.slice(0,-sum); 
         else 
             $scope.arr_H = $scope.arr ;
-
-        if (node.I==0) 
-            $scope.arr_I = $scope.arr.slice(0,-sum); 
-        else 
-            $scope.arr_I = $scope.arr ;
-
         //console.log(sum) ;
         //$scope.arr = $scope.arr.slice(0,-sum);
         //console.log($scope.arr) ;
-
-    
-
     };
 
 
@@ -115,7 +119,7 @@ myApp.controller('Controller1', ['$scope', function($scope ) {
         // /result.push($scope.Q1) ;
         //console.log(result) ;
         var node = $scope.Q1 ; 
-        var data = [node.A,node.B,node.C,node.D,node.E,node.F,node.G,node.H,node.I] ; 
+        var data = [node.A,node.B,node.C,node.D,node.E,node.F,node.G,node.H] ; 
         var s =  sessionStorage.getItem('result');
         
         if (s)
@@ -127,16 +131,16 @@ myApp.controller('Controller1', ['$scope', function($scope ) {
         nums.pop() ;
         
 
-        if (nums.length == 63){
+        if (nums.length == 56){
           
             console.log("collect all the results, doing calculation") ;
-            var q1 = nums.slice(0,9);
-            var q2 = nums.slice(9,18);
-            var q3 = nums.slice(18,27);
-            var q4 = nums.slice(27,36);
-            var q5 = nums.slice(36,45);
-            var q6 = nums.slice(45,54);
-            var q7 = nums.slice(54,63);
+            var q1 = nums.slice(0,8);
+            var q2 = nums.slice(8,16);
+            var q3 = nums.slice(16,24);
+            var q4 = nums.slice(24,32);
+            var q5 = nums.slice(32,40);
+            var q6 = nums.slice(40,48);
+            var q7 = nums.slice(48,56);
 
             // g a h d b f e 
             var IM = Number(q1[6]) + Number(q2[0]) + Number(q3[7]) + Number(q4[3]) + Number(q5[1]) + Number(q6[5]) + Number(q7[4]) ;

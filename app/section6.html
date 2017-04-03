@@ -16,13 +16,15 @@
   <div ng-controller="Controller1" class="Question">
       <h3>Q6. If I am suddenly given a difficult Task: with limited time and unfamiliar people:    </h3>
       <form>
+      
           <div class="form-group">
-          <label for="Select1">A. I tend to read up as much as I can on the subject </label>
+          <label for="Select1">A. I would feel like to be alone to think of a way out of the problem before developing an
+idea </label>
           <select ng-change="change_points()" class="form-control" id="Select1" ng-model="Q1.A" ng-options="i for i in arr_A"  ng-init="Q1.A=arr[0]" ></select> 
           </div>
       
           <div class="form-group">
-          <label for="Select2">B. I can keep doing a job in spite of the pressures    </label>
+          <label for="Select2">B. I would be ready to work with the person who showed the most positive approach </label>
           <select  ng-change="change_points()" class="form-control" id="Select2" ng-model="Q1.B" ng-options="i for i in arr_B"  ng-init="Q1.B=arr[0]">
             <option>0</option>
             <option>1</option>
@@ -31,8 +33,8 @@
           </div>
 
           <div class="form-group">
-          <label for="Select3">C. I would open up discussions with a view to stimulating new thoughts and getting ideas
-moving </label>
+          <label for="Select3">C. I would find some way of reducing the size of the job by establishing what different
+individuals might best contribute </label>
           <select ng-change="change_points()"  class="form-control" id="Select3" ng-model="Q1.C" ng-options="i for i in arr_C"  ng-init="Q1.C=arr[0]">
              <option>0</option>
             <option>1</option>
@@ -41,7 +43,7 @@ moving </label>
           </div>
 
           <div class="form-group">
-          <label for="Select4">D. I believe that I would keep cool and maintain my capacity to think clearly </label>
+          <label for="Select4">D. My natural sense of urgency would help ensure that we did not fall behind schedule</label>
           <select ng-change="change_points()"  class="form-control" id="Select4" ng-model="Q1.D" ng-options="i for i in arr_D"  ng-init="Q1.D=arr[0]">
                <option>0</option>
             <option>1</option>
@@ -50,8 +52,7 @@ moving </label>
           </div>
 
           <div class="form-group">
-          <label for="Select5">E. I would find some way of reducing the size of the job by establishing what different
-individuals might best contribute  </label>
+          <label for="Select5">E. I believe that I would keep cool and maintain my capacity to think clearly  </label>
           <select ng-change="change_points()"  class="form-control" id="Select5" ng-model="Q1.E" ng-options="i for i in arr_E"  ng-init="Q1.E=arr[0]">
                <option>0</option>
             <option>1</option>
@@ -60,8 +61,7 @@ individuals might best contribute  </label>
           </div>
 
           <div class="form-group">
-          <label for="Select6">F. I would feel like to be alone to think of a way out of the problem before developing an
-idea     </label>
+          <label for="Select6">F. I can keep doing a job in spite of the pressures   </label>
           <select ng-change="change_points()"  class="form-control" id="Select6" ng-model="Q1.F" ng-options="i for i in arr_F"  ng-init="Q1.F=arr[0]">
                <option>0</option>
             <option>1</option>
@@ -79,19 +79,10 @@ idea     </label>
           </div>
 
           <div class="form-group">
-          <label for="Select8">H. My natural sense of urgency would help ensure that we did not fall behind schedule </label>
+          <label for="Select8">H. I would open up discussions with a view to stimulating new thoughts and getting ideas
+moving  </label>
           <select ng-change="change_points()"  class="form-control" id="Select8" ng-model="Q1.H" ng-options="i for i in arr_H"  ng-init="Q1.H=arr[0]">
                <option>0</option>
-            <option>1</option>
-            <option>2</option>
-            </select>
-          </div>
-
-
-          <div class="form-group">
-          <label for="Select9">I. I would be ready to work with the person who showed the most positive approach </label>
-          <select ng-change="change_points()"  class="form-control" id="Select9" ng-model="Q1.I" ng-options="i for i in arr_I"  ng-init="Q1.I=arr[0]">
-            <option>0</option>
             <option>1</option>
             <option>2</option>
             </select>
